@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+      --black: 0 0% 0%;
+      --white: 0 0% 100%;
+      /* --input-valid: #4ade80;
+      --input-invallid: #EF5959; */
+      --color-opacity-100: 1;
+      --basic-gray-5: 0 0% 98%;
+      --basic-gray-10: 0 0% 95%;
+      --basic-gray-20: 0 0% 83%;
+      --basic-gray-30: 0 0% 73%;
+      --basic-gray-40: 0 0% 62%;
+      --basic-gray-50: 0 0% 52%;
+      --basic-gray-60: 0 0% 42%;
+      --basic-gray-80: 0 0% 23%;
+      --basic-gray-90: 0 0% 15%;
+      --gray-5: 210 17% 98%;
+      --gray-10: 210 21% 95%;
+      --gray-20: 212 20% 84%;
+      --gray-30: 208 22% 73%;
+      --gray-40: 208 17% 62%;
+      --gray-50: 209 11% 52%;
+      --gray-60: 209 10% 42%;
+      --gray-70: 207 11% 33%;
+      --gray-80: 210 12% 24%;
+      --gray-90: 210 13% 15%;
+      --gray-95: 210 14% 11%;
+      --gray-100: 210 18% 7%;
+      --blue-5: 210 80% 98%;
+      --blue-10: 213 92% 95%;
+      --blue-20: 220 100% 88%;
+      --blue-30: 218 100% 78%;
+      --blue-40: 213 100% 66%;
+      --blue-50: 206 100% 46%;
+      --blue-60: 208 87% 40%;
+      --blue-70: 209 81% 32%;
+      --blue-80: 210 80% 24%;
+      --blue-90: 210 84% 15%;
+      --blue-95: 213 87% 12%;
+      --blue-100: 214 90% 8%;
+      --red-5: 0 100% 99%;
+      --red-10: 357 100% 96%;
+      --red-20: 358 100% 89%;
+      --red-30: 358 100% 81%;
+      --red-40: 360 100% 72%;
+      --red-50: 356 99% 58%;
+      --red-60: 350 96% 43%;
+      --red-70: 354 91% 35%;
+      --red-80: 352 92% 25%;
+      --red-90: 2 98% 16%;
+      --red-100: 356 95% 9%;
+      --green-10: 131 97% 89%;
+      --green-20: 137 82% 65%;
+      --green-30: 140 66% 50%;
+      --green-40: 139 67% 43%;
+      --green-50: 140 68% 35%;
+      --green-60: 135 71% 28%;
+      --green-70: 132 75% 22%;
+      --green-80: 126 89% 15%;
+      --green-90: 121 100% 9%;
+      --green-100: 129 100% 4%;
+      --yellow-10: 38 100% 92%;
+      --yellow-20: 42 98% 68%;
+      --yellow-30: 42 77% 56%;
+      --yellow-40: 45 100% 39%;
+      --yellow-50: 45 100% 33%;
+      --yellow-60: 44 100% 27%;
+      --yellow-70: 45 87% 22%;
+      --yellow-80: 45 76% 16%;
+      --yellow-90: 45 84% 10%;
+      --yellow-100: 41 92% 5%;
+      --lime-10: 95 94% 86%;
+      --lime-20: 85 76% 60%;
+      --lime-30: 82 60% 49%;
+      --lime-40: 75 100% 34%;
+      --lime-50: 75 100% 28%;
+      --lime-60: 71 100% 23%;
+      --lime-70: 71 100% 17%;
+      --lime-80: 71 100% 13%;
+      --lime-90: 75 100% 8%;
+      --lime-100: 79 100% 4%;
+      --cyan-10: 191 100% 91%;
+      --cyan-20: 189 93% 70%;
+      --cyan-30: 186 100% 44%;
+      --cyan-40: 185 100% 37%;
+      --cyan-50: 186 100% 32%;
+      --cyan-60: 186 100% 25%;
+      --cyan-70: 187 67% 24%;
+      --cyan-80: 186 85% 15%;
+      --cyan-90: 188 92% 10%;
+      --cyan-100: 188 100% 5%;
+      --purple-10: 258 100% 97%;
+      --purple-20: 258 100% 90%;
+      --purple-30: 259 100% 84%;
+      --purple-40: 261 100% 76%;
+      --purple-50: 264 100% 69%;
+      --purple-60: 267 100% 59%;
+      --purple-70: 263 69% 47%;
+      --purple-80: 271 100% 32%;
+      --purple-90: 268 87% 22%;
+      --purple-100: 267 100% 12%;
+      --pink-10: 338 100% 96%;
+      --pink-20: 335 97% 88%;
+      --pink-30: 332 96% 80%;
+      --pink-40: 329 97% 70%;
+      --pink-50: 323 93% 53%;
+      --pink-60: 323 86% 43%;
+      --pink-70: 321 77% 34%;
+      --pink-80: 323 92% 24%;
+      --pink-90: 321 97% 15%;
+      --pink-100: 327 86% 8%;
+  }
+}
+
+@layer components {
+ 
+  .input-border {
+      @apply outline-none
+      border border-gray-20
+      bg-gray-5
+      hover:bg-blue-5
+      focus:bg-gray-5
+      focus:placeholder-shown:shadow-[0_0_0_4px_#fff]
+      focus:placeholder-shown:shadow-blue-30
+      focus:placeholder-shown:invalid:border-gray-20
+      focus:invalid:border-red-50
+      focus:valid:border-green-50
+      transition-all
+  }
+}
+
+*,::after, ::before{
+  font-family: 'DM Sans', sans-serif;
+}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}
